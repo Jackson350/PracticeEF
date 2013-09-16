@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="90cd2ba4d1ab40518009ab763a6c1430" Name="Diagram1" ZoomLevel="95">
+        <EntityTypeShape EntityType="AwModelNs.CountryRegionCurrency" Width="2.25" PointX="7.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AwModelNs.CreditCard" Width="1.5" PointX="7.5" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AwModelNs.Currency" Width="1.5" PointX="5.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AwModelNs.CurrencyRate" Width="1.5" PointX="7.5" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AwModelNs.Customer" Width="1.5" PointX="7.5" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AwModelNs.PersonCreditCard" Width="1.5" PointX="9.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AwModelNs.SalesOrderDetail" Width="1.5" PointX="12" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AwModelNs.SalesOrderHeader" Width="1.5" PointX="9.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AwModelNs.SalesOrderHeaderSalesReason" Width="1.5" PointX="15" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="AwModelNs.SalesPerson" Width="1.5" PointX="3" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="AwModelNs.SalesPersonQuotaHistory" Width="1.5" PointX="5.25" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AwModelNs.SalesReason" Width="1.5" PointX="12.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="AwModelNs.SalesTaxRate" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AwModelNs.SalesTerritory" Width="1.5" PointX="0.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AwModelNs.SalesTerritoryHistory" Width="1.5" PointX="5.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AwModelNs.ShoppingCartItem" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AwModelNs.SpecialOffer" Width="1.5" PointX="7.5" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AwModelNs.SpecialOfferProduct" Width="1.5" PointX="9.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AwModelNs.Store" Width="1.5" PointX="5.25" PointY="18.375" IsExpanded="true" />
+        <AssociationConnector Association="AwModelNs.FK_CountryRegionCurrency_Currency_CurrencyCode" ManuallyRouted="false" />
+        <AssociationConnector Association="AwModelNs.FK_PersonCreditCard_CreditCard_CreditCardID" ManuallyRouted="false" />
+        <AssociationConnector Association="AwModelNs.FK_SalesOrderHeader_CreditCard_CreditCardID" ManuallyRouted="false" />
+        <AssociationConnector Association="AwModelNs.FK_CurrencyRate_Currency_FromCurrencyCode" ManuallyRouted="false" />
+        <AssociationConnector Association="AwModelNs.FK_CurrencyRate_Currency_ToCurrencyCode" ManuallyRouted="false" />
+        <AssociationConnector Association="AwModelNs.FK_SalesOrderHeader_CurrencyRate_CurrencyRateID" ManuallyRouted="false" />
+        <AssociationConnector Association="AwModelNs.FK_Customer_SalesTerritory_TerritoryID" ManuallyRouted="false" />
+        <AssociationConnector Association="AwModelNs.FK_Customer_Store_StoreID" ManuallyRouted="false" />
+        <AssociationConnector Association="AwModelNs.FK_SalesOrderHeader_Customer_CustomerID" ManuallyRouted="false" />
+        <AssociationConnector Association="AwModelNs.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" ManuallyRouted="false" />
+        <AssociationConnector Association="AwModelNs.FK_SalesOrderDetail_SpecialOfferProduct_SpecialOfferIDProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="AwModelNs.FK_SalesOrderHeader_SalesPerson_SalesPersonID" ManuallyRouted="false" />
+        <AssociationConnector Association="AwModelNs.FK_SalesOrderHeader_SalesTerritory_TerritoryID" ManuallyRouted="false" />
+        <AssociationConnector Association="AwModelNs.FK_SalesOrderHeaderSalesReason_SalesOrderHeader_SalesOrderID" ManuallyRouted="false" />
+        <AssociationConnector Association="AwModelNs.FK_SalesOrderHeaderSalesReason_SalesReason_SalesReasonID" ManuallyRouted="false" />
+        <AssociationConnector Association="AwModelNs.FK_SalesPerson_SalesTerritory_TerritoryID" ManuallyRouted="false" />
+        <AssociationConnector Association="AwModelNs.FK_SalesPersonQuotaHistory_SalesPerson_BusinessEntityID" ManuallyRouted="false" />
+        <AssociationConnector Association="AwModelNs.FK_SalesTerritoryHistory_SalesPerson_BusinessEntityID" ManuallyRouted="false" />
+        <AssociationConnector Association="AwModelNs.FK_Store_SalesPerson_SalesPersonID" ManuallyRouted="false" />
+        <AssociationConnector Association="AwModelNs.FK_SalesTerritoryHistory_SalesTerritory_TerritoryID" ManuallyRouted="false" />
+        <AssociationConnector Association="AwModelNs.FK_SpecialOfferProduct_SpecialOffer_SpecialOfferID" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="AwModelNs.Department" Width="1.5" PointX="8.5588869827608054" PointY="17.027138181509049" />
+        <EntityTypeShape EntityType="AwModelNs.Employee" Width="1.5" PointX="0.54407680059973007" PointY="13.268540433267383" />
+        <EntityTypeShape EntityType="AwModelNs.EmployeeDepartmentHistory" Width="1.5" PointX="10.305128825039198" PointY="29.409248172030434" />
+        <EntityTypeShape EntityType="AwModelNs.EmployeePayHistory" Width="1.5" PointX="9.9707362679628364" PointY="26.759966713730229" />
+        <EntityTypeShape EntityType="AwModelNs.JobCandidate" Width="1.5" PointX="0.70271011847197551" PointY="12.113934507646567" />
+        <EntityTypeShape EntityType="AwModelNs.Shift" Width="1.5" PointX="8.9665232025862309" PointY="31.657382979829507" />
+        <EntityTypeShape EntityType="AwModelNs.Address" Width="1.5" PointX="9.9348323242435388" PointY="9.9775981800526363" />
+        <EntityTypeShape EntityType="AwModelNs.AddressType" Width="1.5" PointX="11.370140628595902" PointY="30.892494037231661" />
+        <EntityTypeShape EntityType="AwModelNs.BusinessEntity" Width="1.5" PointX="2.531346247778901" PointY="26.831173030115281" />
+        <EntityTypeShape EntityType="AwModelNs.BusinessEntityAddress" Width="1.5" PointX="8.72439907711204" PointY="7.8086144513490678" />
+        <EntityTypeShape EntityType="AwModelNs.BusinessEntityContact" Width="1.5" PointX="0.85792087617233448" PointY="12.730886509982351" />
+        <EntityTypeShape EntityType="AwModelNs.ContactType" Width="1.5" PointX="1.5615415878414836" PointY="13.919688424989436" />
+        <EntityTypeShape EntityType="AwModelNs.CountryRegion" Width="1.5" PointX="0.20876473198121634" PointY="6.9491171869212378" />
+        <EntityTypeShape EntityType="AwModelNs.EmailAddress" Width="1.5" PointX="3.7842513806113276" PointY="17.473025568515538" />
+        <EntityTypeShape EntityType="AwModelNs.Password" Width="1.5" PointX="8.7786696370591724" PointY="19.41160050938446" />
+        <EntityTypeShape EntityType="AwModelNs.Person" Width="1.5" PointX="2.8891713595433028" PointY="23.696272905774542" />
+        <EntityTypeShape EntityType="AwModelNs.PersonPhone" Width="1.5" PointX="0.75613606756373131" PointY="1.2175796484656538" />
+        <EntityTypeShape EntityType="AwModelNs.PhoneNumberType" Width="1.5" PointX="3.6519833782929849" PointY="17.936505147226391" />
+        <EntityTypeShape EntityType="AwModelNs.StateProvince" Width="1.5" PointX="6.5171379309693069" PointY="10.420822580540936" />
+        <AssociationConnector Association="AwModelNs.FK_EmployeeDepartmentHistory_Department_DepartmentID" />
+        <AssociationConnector Association="AwModelNs.FK_Employee_Person_BusinessEntityID" />
+        <AssociationConnector Association="AwModelNs.FK_EmployeeDepartmentHistory_Employee_BusinessEntityID" />
+        <AssociationConnector Association="AwModelNs.FK_EmployeePayHistory_Employee_BusinessEntityID" />
+        <AssociationConnector Association="AwModelNs.FK_JobCandidate_Employee_BusinessEntityID" />
+        <AssociationConnector Association="AwModelNs.FK_SalesPerson_Employee_BusinessEntityID" />
+        <AssociationConnector Association="AwModelNs.FK_EmployeeDepartmentHistory_Shift_ShiftID" />
+        <AssociationConnector Association="AwModelNs.FK_Address_StateProvince_StateProvinceID" />
+        <AssociationConnector Association="AwModelNs.FK_BusinessEntityAddress_Address_AddressID" />
+        <AssociationConnector Association="AwModelNs.FK_SalesOrderHeader_Address_BillToAddressID" />
+        <AssociationConnector Association="AwModelNs.FK_SalesOrderHeader_Address_ShipToAddressID" />
+        <AssociationConnector Association="AwModelNs.FK_BusinessEntityAddress_AddressType_AddressTypeID" />
+        <AssociationConnector Association="AwModelNs.FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID" />
+        <AssociationConnector Association="AwModelNs.FK_BusinessEntityContact_BusinessEntity_BusinessEntityID" />
+        <AssociationConnector Association="AwModelNs.FK_Person_BusinessEntity_BusinessEntityID" />
+        <AssociationConnector Association="AwModelNs.FK_Store_BusinessEntity_BusinessEntityID" />
+        <AssociationConnector Association="AwModelNs.FK_BusinessEntityContact_ContactType_ContactTypeID" />
+        <AssociationConnector Association="AwModelNs.FK_BusinessEntityContact_Person_PersonID" />
+        <AssociationConnector Association="AwModelNs.FK_CountryRegionCurrency_CountryRegion_CountryRegionCode" />
+        <AssociationConnector Association="AwModelNs.FK_SalesTerritory_CountryRegion_CountryRegionCode" />
+        <AssociationConnector Association="AwModelNs.FK_StateProvince_CountryRegion_CountryRegionCode" />
+        <AssociationConnector Association="AwModelNs.FK_EmailAddress_Person_BusinessEntityID" />
+        <AssociationConnector Association="AwModelNs.FK_Password_Person_BusinessEntityID" />
+        <AssociationConnector Association="AwModelNs.FK_Customer_Person_PersonID" />
+        <AssociationConnector Association="AwModelNs.FK_PersonCreditCard_Person_BusinessEntityID" />
+        <AssociationConnector Association="AwModelNs.FK_PersonPhone_Person_BusinessEntityID" />
+        <AssociationConnector Association="AwModelNs.FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" />
+        <AssociationConnector Association="AwModelNs.FK_SalesTaxRate_StateProvince_StateProvinceID" />
+        <AssociationConnector Association="AwModelNs.FK_StateProvince_SalesTerritory_TerritoryID" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
